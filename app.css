@@ -71,3 +71,9 @@ img {
     margin-left: 0%;
     margin-bottom: 1%;
 }
+
+img:hover {
+    visibility: hidden;
+}
+/* si il y a un moyen de changer entre les 2 logos avec une transition au survol en css c'est ici qu'il faut le faire pour éviter de devoir faire du JS*/
+
