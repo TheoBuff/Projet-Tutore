@@ -35,8 +35,8 @@ header > p {
 ol {
     list-style: none;
     counter-reset: compteur;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 12%;
+    margin-right: 12%;
     display: flex;
     flex-wrap: wrap;
 

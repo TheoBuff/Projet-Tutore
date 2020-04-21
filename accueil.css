@@ -20,8 +20,6 @@
     margin-top: 20%;
     
   }
-
- il faudra mettre les paragraphes qui sont concernés par ce code dans une div avec une classe pour ne pas créer de conflit avec mes paragraphes qui ne doivent pas être en blanc
 p{
     font-family: 'Manrope', sans-serif;
     font-size: 2em;
