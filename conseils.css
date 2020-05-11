@@ -30,15 +30,18 @@ header {
 header > p {
     margin-left: 15%;
     margin-right: 15%;
+    
+    
 }
 
 ol {
     list-style: none;
     counter-reset: compteur;
-    margin-left: 16%;
-    margin-right: 20%;
+    margin-left: 20%;
+    margin-right: 24%;
     display: flex;
     flex-wrap: wrap;
+    text-align: left;
     /*min-width: 1024px;*/
 } 
 /*min-width ol {  besoin d'aide ici pour faire en sorte que quand on est sur une largeur minimum de 1024 px pour une tablette on a plus de marges à gauche et à droite des parapgraphes des conseils pour qu'ils remplissent toute la page en largeur alors que sur une page de 1920 px de largeur il faut qu'elles gardent les marges gauche et droite pour être plus au centre 
@@ -50,14 +53,17 @@ ol {
 ol li {
     counter-increment: compteur;
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     margin-bottom: 0.5rem;
     min-width: 600px;
+    text-align: left;
+    
 }
 
 li > p {
     font-weight: 600;
     font-size: 1.15em;
+    text-align: left;
 }
 
 ol li::before {
@@ -67,6 +73,7 @@ ol li::before {
     margin-right: 6%;
     margin-top: 0.6%;
     background: -webkit-linear-gradient(rgb(228, 136, 136), rgb(219, 0, 0));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
