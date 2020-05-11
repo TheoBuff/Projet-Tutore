@@ -10,9 +10,7 @@ h1 {
     font-size: 4em;
     margin-bottom: -30px;
     margin-top: 0.5%;
-}
-h1 + p {
-    font-weight: 300;
+    text-shadow: rgba(255, 255, 255, 0.25) 5px 5px;
 }
 
 header {
@@ -28,10 +26,14 @@ header {
 }
 
 header > p {
+    font-weight: 600;
     margin-left: 15%;
     margin-right: 15%;
-    
-    
+    text-shadow: rgba(0, 0, 0, 0.404) 3px 3px;
+}
+
+h1 + p {
+    font-weight: 400;
 }
 
 ol {
@@ -84,6 +86,9 @@ img {
     margin-top: 2%;
     margin-left: 0%;
     margin-bottom: 1%;
+}
+.Conseil1 {
+    margin-left: 12px;
 }
 
 /*img:hover {
