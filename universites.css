@@ -32,45 +32,6 @@ header > p {
     margin-right: 15%;
 }
 
-ol {
-    list-style: none;
-    counter-reset: compteur;
-    margin-left: 16%;
-    margin-right: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    /*min-width: 1024px;*/
-} 
-/*min-width ol {  besoin d'aide ici pour faire en sorte que quand on est sur une largeur minimum de 1024 px pour une tablette on a plus de marges à gauche et à droite des parapgraphes des conseils pour qu'ils remplissent toute la page en largeur alors que sur une page de 1920 px de largeur il faut qu'elles gardent les marges gauche et droite pour être plus au centre 
-    margin-left: 0%;
-    margin-right: 0%;
-}*/
-
-
-ol li {
-    counter-increment: compteur;
-    display: flex;
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    min-width: 600px;
-}
-
-li > p {
-    font-weight: 600;
-    font-size: 1.15em;
-}
-
-ol li::before {
-    content: counter(compteur);
-    font-size: 4.5rem;
-    font-weight: bold;
-    margin-right: 6%;
-    margin-top: 0.6%;
-    background: -webkit-linear-gradient(rgb(228, 136, 136), rgb(219, 0, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 img {
     width: 14%;
     height: 3%;
@@ -82,6 +43,125 @@ img {
 /*img:hover {
     visibility: hidden;
 }
-/* si il y a un moyen de changer entre les 2 logos avec une transition au survol en css c'est ici qu'il faut le faire pour éviter de devoir faire du JS
+/* si il y a un moyen de changer entre les 2 logos avec une transition au survol en css c'est ici qu'il faut le faire pour éviter de devoir faire du JS */
+
+fieldset {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+fieldset input[type="text"] {
+    border: solid black 1px; 
+    /* margin: 40px 40px 40px 40px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    min-width: 200px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.box {
+    border: solid black 1px; 
+    width: 350px;
+    height: 200px;
+    margin: 40px 40px 40px 40px;
+    padding:25px 50px 40px 40px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+    text-align: left;
+    overflow: hidden;
+}
+
+a.box:hover {
+    color: white;
+    border: solid black 1px; 
+    width: 350px;
+    height: 200px;
+    margin: 40px 40px 40px 40px;
+    padding:25px 50px 40px 40px;
+    background-color: blue;
+    -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+    text-align: left;
+    overflow: hidden;
+}
+
+a.box:hover h3 {
+    color: white;
+}
+
+a.box:hover p {
+    color: white;
+}
+
+div.container a {
+    text-decoration: none;
+}
+
+a.box h3 {
+    color: black;
+    margin: 0;
+    font-size: 1em;
+} 
+
+a.box p {
+    color: black;
+    /* margin-top: 10px;
+    margin-bottom: 10px;  */
+    line-height: 20px;
+    font-size: 0.75em;
+
+} 
+
+p img {
+    width: 2.5%;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+
+
+a.box .alternance {
+    margin-right: 15px;
+    width: fit-content;
+    padding: 10px;
+    background-color: grey;
+    color: white;
+}
+
+a.box .initiale {
+    margin-right: 15px;
+    width: fit-content;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+a.box .interview {
+    margin-right: 15px;
+    width: fit-content;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
 
 
