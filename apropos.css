@@ -1,0 +1,131 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    min-width: 1130px;
+    margin: auto;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 3em;
+    /* margin-bottom: -30px; */
+    /* margin-top: 0.5%; */
+}
+h2{
+    font-size: 2em;
+    margin-top: 50px;
+    font-weight: 300; 
+}
+
+
+header {
+    background-color: #B4C4FF;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+    display: flex;
+
+
+}
+span{
+    color: #062083;
+}
+
+
+img {
+    width: 14%;
+    height: 3%;
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-bottom: 1%;
+}
+
+.intro{
+    display: flex;
+    flex-direction:column;
+    max-width: 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.intro p {
+font-size: 1.2rem;
+line-height:150%;
+} 
+
+.contact{
+    display: flex;
+    flex-direction:column;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.bot{
+    color: white;
+    background-color: #062083;
+    transition-property: color, background-color; 
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: linear, ease-in; 
+    padding: 8px 30px 8px 30px;
+    border: none;
+    font-size: 1rem;
+
+}
+.bot:hover{
+    background-color: transparent;
+    color: rgb(243, 242, 242);
+    border: solid 1px #062083;
+    background-color: rgb(46, 46, 46);
+
+}
+
+input[type=text], select , input[type=email], textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input[type=text], input[type=email], textarea{
+       box-shadow: 4px 5px 0px 0px #062083; 
+  }
+
+
+/* j'arrive pas a mettre le box shadow */
+
+/* input:required{
+    border-color: red; 
+}
+input:required:valid{
+    border-color: green;
+} */
+a{
+    text-decoration: none;
+    color: teal;
+
+}
+a:visited{
+    text-decoration: none;
+}
+.cvs{
+    margin-bottom: 100px;
+}
+
+footer{
+    background-color: black;
+}
+.socialmedia{
+    margin: 0px 7px 0px 7px;
+}
+
+/* .test{
+    background-color: white;
+}
+.test:hover{
+    background-color: rgb(199, 80, 193);
+} */
