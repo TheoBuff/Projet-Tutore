@@ -7,9 +7,11 @@ body {
 }
 
 h1 {
+    color: white;
     font-size: 4em;
     margin-bottom: -30px;
     margin-top: 0.5%;
+    text-shadow: rgba(255, 255, 255, 0.479) 5px 5px;
 }
 h1 + p {
     font-weight: 300;
@@ -19,7 +21,7 @@ header {
     background: linear-gradient(to right, rgba(153,197,255, 0.589), rgba(181,230,254, 0.76));
     text-align: center;
     width: 100%;
-    color: black;
+    color: white;
     margin-top: 20px;
     margin-bottom: 3%;
     padding-bottom: 2%;
