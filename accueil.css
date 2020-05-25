@@ -1,100 +1,136 @@
+@-webkit-keyframes downarrow {
+  0% {
+    -webkit-transform: translateY(-0.2em);
+    opacity: 0.3
+  }
+
+  100% {
+    -webkit-transform: translateY(0.6em);
+    opacity: 0.9
+  }
+}
+
 body {
   margin: 0;
 }
 
 .parallax .image {
-    position: relative;
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center top;
-    background-size: cover;
-  }
-
-  .parallax .image.one {
-    /* background-image: url("img/FOND1.png"); */
-    /* background-color: #3D4E8F; */
-    background: linear-gradient(to right, rgba(32, 63, 201, 0.589), rgba(64, 0, 184, 0.76));
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-  }
-  .logo1{
-    text-align: center;
-    width: 25%;
-    margin-top: 20vh;
-    
-  }
-p {
-    font-family: 'Manrope', sans-serif;
-    font-size: 2em;
-    color: white;
-    margin: auto;
-    max-width: 90%;
-    font-weight: 300; 
+  position: relative;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
 }
 
-  
-  .content{
-    display: flex;
-    height: 100vh;
-    flex-flow: column;
-    align-items: center;
-    /* background-color:#818FC9; */
-    background: linear-gradient(to right, rgba(64, 0, 184, 0.76), rgba(32, 63, 201, 0.589));
-  }
-  
-.head {
-    display: flex;
-    height: 40vh;
-    align-items: center;
-    justify-content: center;
-  }
+.parallax .image.one {
+  /* background-image: url("img/FOND1.png"); */
+  /* background-color: #3D4E8F; */
+  background: linear-gradient(to right, rgba(32, 63, 201, 0.589), rgba(64, 0, 184, 0.76));
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
 
-#logo2  {
-  display: flex;  
+.logo1 {
+  text-align: center;
+  width: 25%;
+  margin-top: 20vh;
+
+}
+
+p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2em;
+  color: white;
+  margin: auto;
+  max-width: 90%;
+  font-weight: 300;
+}
+
+
+.content {
+  display: flex;
+  height: 100vh;
+  flex-flow: column;
+  align-items: center;
+  /* background-color:#818FC9; */
+  /* background: linear-gradient(to right, rgba(64, 0, 184, 0.76), rgba(32, 63, 201, 0.589)); */
+}
+
+.textintro {
+  text-align: center;
+}
+
+.arrow {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0 2em;
+  display: block;
+  height: 0;
+  margin-bottom: 10vh;
+  opacity: 0.4;
+  text-indent: -9999px;
+  transform-origin: 50% 50%;
+  width: 0;
+}
+
+.down {
+  -webkit-animation: downarrow 0.6s infinite alternate ease-in-out;
+  border-top: 2em solid white;
+}
+
+.head {
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo2 {
+  display: flex;
   width: 20vh;
   align-items: center;
   justify-content: center;
 }
 
-
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .top {
-    font-family: 'Manrope', sans-serif;
-    margin-left: 100px;
-    margin-right: 100px;
-    
-}
-.options{
-    font-family: 'Manrope', sans-serif;
-    font-weight: 600;
-    border: solid black 1px; 
-    margin: 50px 50px 50px 50px;
-    padding:50px 50px 50px 50px;
-    background-color: whitesmoke;
-    -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
-    -moz-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
-    box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+  font-family: 'Manrope', sans-serif;
+  margin-left: 100px;
+  margin-right: 100px;
+
 }
 
-.op{
+.container {
   display: flex;
-  height: 20vh;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.options {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  border: solid black 1px;
+  margin: 50px 50px 50px 50px;
+  padding: 50px 50px 50px 50px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 1);
+  box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 1);
 }
 
 .options:hover {
- background-color: black;
- color: white;
- -webkit-box-shadow: 0px 0px 5px 2px rgb(250, 250, 250);
- -moz-box-shadow: 0px 0px 5px 2px rgb(250, 250, 250);
- box-shadow: -7px -7px 0px 1px rgb(250, 250, 250);
- transition: all ease 0.9s;
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 0px 0px 5px 2px rgb(250, 250, 250);
+  -moz-box-shadow: 0px 0px 5px 2px rgb(250, 250, 250);
+  box-shadow: -7px -7px 0px 1px rgb(250, 250, 250);
+  transition: all ease 0.9s;
 }
