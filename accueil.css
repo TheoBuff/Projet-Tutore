@@ -1,3 +1,15 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 @-webkit-keyframes downarrow {
   0% {
     -webkit-transform: translateY(-0.2em);
@@ -14,18 +26,21 @@ body {
   margin: 0;
 }
 
-.parallax .image {
+/* .parallax .image {
   position: relative;
   height: 100vh;
   background-attachment: fixed;
   background-position: center top;
   background-size: cover;
-}
+} */
 
 .parallax .image.one {
   /* background-image: url("img/FOND1.png"); */
   /* background-color: #3D4E8F; */
-  background: linear-gradient(to right, rgba(32, 63, 201, 0.589), rgba(64, 0, 184, 0.76));
+  /* background: linear-gradient(to right, rgba(32, 63, 201, 0.589), rgba(64, 0, 184, 0.76)); */
+  background: linear-gradient(-45deg,#ee7752, #e73c7e,#4000b8, #203fc9 );
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
   display: flex;
   height: 100vh;
   align-items: center;
