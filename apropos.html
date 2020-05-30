@@ -28,8 +28,6 @@
 
         <div class="contact">
             <h2>Nous contacter</h2>
-            <?php if (!isset($_GET['success'])): ?>
-
             <form action="connect.php" method="POST">
                 <!-- <fieldset> -->
 
@@ -48,51 +46,41 @@
                     <label for="sujet">Sujet</label> <input type="text" name="sujet" placeholder="Donne lui un titre à ton message">
                 </p>
 
-                <p><textarea cols="40" rows="5" name="message" placeholder="Tu peux écrire ton message ici !"></textarea></p>
+                <p><textarea cols="40" rows="5" name="texte" placeholder="Tu peux écrire ton message ici !"></textarea></p>
                 <!-- </fieldset> -->
 
                 <input type="submit" value="Envoyer" class="bot" name="submit">
 
             </form>
-            <?php else: ?>
-                <p>Merci pour ton message<?php echo htmlspecialchars($_POST['prenom']); ?>!<br>
-            Tu peux découvrir nos CVs interactifs ci-dessous</p>
-            <?php endif; ?>
-
         </div>
 
     </header>
 
     <div class="cvs">
-        <div>
         <img src="img/paul.png" alt="">
         <h3>Paul - Chef de projet</h3>
         <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le fromage, et Macron </p>
         <a href="#">Venez découvrir mon CV ici</a>
-        </div>
+        <br>
 
-        <div class="right">
         <img src="img/michelle.png" alt="">
         <h3>Michelle - Développeuse</h3>
         <p>J'aime coder, penser, resoudre des problèmes et avoir des expériences de vie!</p>
         <a href="#">Venez découvrir mon CV ici</a>
         <a href="#">Venez découvrir mon CV ici</a>
-        </div>
+        <br>
 
-        <div>
         <img src="img/theo.png" alt="">
         <h3>Théo - Développeur</h3>
         <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le fromage, et Macron </p>
         <a href="#">Venez découvrir mon CV ici</a>
         <a href="#">Venez découvrir mon CV ici</a>
-        </div>
+        <br>
 
-        <div class="right">
         <img src="img/leonard.png" alt="">
         <h3>Léonard - Graphiste</h3>
         <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le fromage, et Macron </p>
         <a href="#">Venez découvrir mon CV ici</a>
-        </div>
     </div>
 
     <footer>
