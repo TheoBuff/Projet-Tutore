@@ -1,6 +1,7 @@
 "use strict";
 
-$(document).on('click', 'a[href^="#"]', function (event) {
+
+$(document).on('click', '.arrow', function (event) {
     event.preventDefault();
 
     $('html, body').animate({

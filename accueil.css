@@ -34,7 +34,7 @@ body {
 .parallax .image.one {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #4000b8, #203fc9);
   background-size: 400% 400%;
-  animation: gradient 7s ease infinite;
+  animation: gradient 15s ease infinite;
   display: flex;
   height: 100vh;
   align-items: center;
