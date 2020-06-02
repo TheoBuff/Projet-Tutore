@@ -53,7 +53,7 @@ header > p {
 
 .Savoir {
     border: solid black 1px; 
-    margin: 2.5% 50% -28% 6%;
+    margin: 2.5% 50% -20% 6%;
     padding: 2% 3% 2% 2%;
     background-color: whitesmoke;
     -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
@@ -64,8 +64,8 @@ header > p {
 
 .Débouchés {
     border: solid black 1px; 
-    margin: 4% 6% 15% 55%;
-    padding: 1% 1% 1% 2%;
+    margin: 8% 6% 15% 55%;
+    padding: 1% 1% 1% 3%;
     background-color: whitesmoke;
     -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
     -moz-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
@@ -75,8 +75,8 @@ header > p {
 
 .Matières {
     border: solid black 1px; 
-    margin: 11% 55% -35% 6%;
-    padding: 1% 1% 1% 2%;
+    margin: 11% 6% -5%55%;
+    padding: 1% 1% 1% 3%;
     background-color: whitesmoke;
     -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
     -moz-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
@@ -95,16 +95,18 @@ header > p {
     background-color: whitesmoke;
 }
 
-.site {
-    margin-top: -25px;
+.Informations {
+    border: solid black 1px; 
+    margin: -25% 50% 10% 6%;
+    padding: 2% 4% 2% 4%;
+    -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
+    background-color: whitesmoke;
 }
 
-.image {
-    -webkit-box-shadow: 1px 1px 0px 2px rgba(0,0,0,1);
-    -moz-box-shadow: 1px 1px 0px 2px rgba(0,0,0,1);
-    box-shadow: 1px 1px 0px 2px rgba(0,0,0,1);
-    margin-left: 60%;
-    margin-bottom: 10%;
+.site {
+    margin-top: -25px;
 }
 
 li{
@@ -130,4 +132,5 @@ h4{
     -webkit-text-fill-color: transparent;
 
 }
+
 
