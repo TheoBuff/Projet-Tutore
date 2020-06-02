@@ -44,6 +44,7 @@
 
                 <p>
                 <label for="email">Email</label><input type="email" required name="email">
+
                 </p>
 
                 <p>
@@ -66,34 +67,34 @@
     </header>
 
     <div class="cvs">
-        <div class='Paul'>
-            <img src="img/paul.png" alt="">
-            <h3>Paul - Chef de projet</h3>
-            <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le fromage, et Macron </p>
-            <a href="#">Venez découvrir mon CV ici</a>
-            <br>
+        <div>
+        <img src="img/paul.png" alt="">
+        <h3>Paul - Chef de projet</h3>
+        <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le fromage, et Macron </p>
+        <a href="#">Venez découvrir mon CV ici</a>
         </div>
-        <div class='Michelle'>
-            <img src="img/michelle.png" alt="">
-            <h3>Michelle - Développeuse</h3>
-            <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le fromage, et Macron </p>
-            <a href="#">Venez découvrir mon CV ici</a>
-            <br>
+
+        <div class="right">
+        <img src="img/michelle.png" alt="">
+        <h3>Michelle - Développeuse</h3>
+        <p>J'aime coder, penser, resoudre des problèmes et avoir des expériences de vie!</p>
+        <a href="#">Venez découvrir mon CV ici</a>
         </div>
-        <div class='Théo'>
-            <img src="img/theo.png" alt="">
-            <h3>Théo - Développeur</h3>
-            <p>Passioné de jeux vidéos, de musique métal et du la culture Geek, je cherche à faire sans cesse de
+
+        <div>
+        <img src="img/theo.png" alt="">
+        <h3>Théo - Développeur</h3>
+        <p>Passioné de jeux vidéos, de musique métal et du la culture Geek, je cherche à faire sans cesse de
                 nouvelles rencontres et discuter, alors si vous vous reconnaisez dans cette description venez me trouver
                 sur les réseaux</p>
-            <a href="#">Venez découvrir mon CV ici</a>
-            <br>
+        <a href="#">Venez découvrir mon CV ici</a>
         </div>
-        <div class='Léonard'>
-            <img src="img/leonard.png" alt="">
-            <h3>Léonard - Graphiste</h3>
-            <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le fromage, et Macron </p>
-            <a href="#">Venez découvrir mon CV ici</a>
+
+        <div class="right">
+        <img src="img/leonard.png" alt="">
+        <h3>Léonard - Graphiste</h3>
+        <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le fromage, et Macron </p>
+        <a href="#">Venez découvrir mon CV ici</a>
         </div>
     </div>
 

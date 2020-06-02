@@ -1,6 +1,6 @@
 body {
     font-family: 'Manrope', sans-serif;
-    min-width: 1600px;
+    min-width: 1130px;
     margin: auto;
     text-align: center;
 
@@ -52,12 +52,8 @@ img {
     margin-right: 10%;
 }
 
-p{
-    font-size: 1.3rem;
-}
-
 .intro p {
-font-size: 1.7rem;
+font-size: 1.45rem;
 line-height:150%;
 } 
 
@@ -111,7 +107,6 @@ input:required:valid{
 a{
     text-decoration: none;
     color: teal;
-    font-size: 1.2rem;
 
 }
 a:visited{
@@ -127,27 +122,12 @@ footer{
 .socialmedia{
     margin: 0px 7px 0px 7px;
 }
-
-.Paul{
-    margin-right: 50%;
-    padding-left: 3%;
+.cv{
+    display: flex;
 }
-
-.Michelle{
-    margin-left: 50%;
-    padding-right: 3%;
+.right{
+    flex-direction:row-reverse;
 }
-
-.Théo{
-    margin-right: 50%;
-    padding-left: 3%;
-}
-
-.Léonard{
-    margin-left: 50%;
-    padding-right: 3%;
-}
-
 
 /* .test{
     background-color: white;
