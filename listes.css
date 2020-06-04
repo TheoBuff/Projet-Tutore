@@ -43,9 +43,10 @@ fieldset {
     border: none;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-fieldset input[type="text"] {
+fieldset input[type="search"] {
     border: solid black 1px; 
     /* margin: 40px 40px 40px 40px; */
     padding-top: 10px;
@@ -156,6 +157,7 @@ a.box .interview {
     color: black;
     border: 1px solid black;
 }
+
 
 
 

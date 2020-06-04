@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 // Execute script only for POST method
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $db = new PDO('mysql:host=localhost;dbname=projettut', 'root', 'root');
+    $db = new PDO('mysql:host=localhost;dbname=projettut', 'root', ''); // j'ai trouvé pour que ça marche sur ma base de données il faut que j'enlève le root en tant que mdp dans la ligne à gauche si le formulaire ne fonctionne par pour vous avec ça c'est qu'il faut que vous rajoutiez root au lieu de l'espace vide 
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
   // Our SQL query, values will be replaced later

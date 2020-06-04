@@ -1,3 +1,92 @@
+/* version regular */
+@font-face {
+  font-family: 'Avenir' ;
+  src: url(font/avenirRegular.woff2) format('woff2') , 
+       url(font/avenirRegular.woff) format('woff') ;
+  font-weight: normal ;
+  font-style: normal ; 
+}
+
+/* version bold */
+@font-face {
+  font-family: 'Avenir' ;
+  src: url(font/avenirBold.woff2) format('woff2') , 
+       url(font/avenirBold.woff) format('woff') ;
+  font-weight: bold ;
+  font-style: normal ; 
+}
+
+/* version italic */
+@font-face {
+  font-family: 'Avenir' ;
+  src: url(font/avenirItalic.woff2) format('woff2') , 
+       url(font/avenirItalic.woff) format('woff') ;
+  font-weight: normal ;
+  font-style: italic ; 
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Avenir', sans-serif;
+  overflow: hidden;
+}
+
+/* Page 1  */
+
+.parallax .image.one {
+  background-image: url(img/fondAccueil.jpg) ;
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.logo1 {
+  text-align: center;
+  width: 29%;
+  margin-top: 34vh;
+
+}
+
+p {
+  font-family: 'Avenir', sans-serif;
+  font-size: 1.5em;
+  color: white;
+  margin: 70px auto auto auto;
+  max-width: 90%;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+
+.textintro {
+  text-align: center;
+}
+
+.arrow {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0 2em;
+  display: block;
+  height: 0;
+  margin-bottom: 5vh;
+  opacity: 0.4;
+  text-indent: -9999px;
+  transform-origin: 50% 50%;
+  width: 0;
+}
+
+.down {
+  animation: downarrow 0.6s infinite alternate ease-in-out;
+  border-top: 2em solid white;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -24,104 +113,70 @@
   }
 }
 
-
-body {
-  margin: 0;
-  font-family: 'Manrope', sans-serif;
-}
-
-
-.parallax .image.one {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #4000b8, #203fc9);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-}
-
-.logo1 {
-  text-align: center;
-  width: 25%;
-  margin-top: 20vh;
-
-}
-
-p {
-  font-family: 'Manrope', sans-serif;
-  font-size: 2em;
-  color: white;
-  margin: auto;
-  max-width: 90%;
-  font-weight: 300;
-}
-
+/* Page 2 */
 
 .content {
   display: flex;
-  height: 100vh;
+  
   flex-flow: column;
-  align-items: center;
-  /* background-color:#818FC9; */
-  /* background: linear-gradient(180deg, #a1c4fd, #c2e9fb); */
-  background: linear-gradient(-45deg, #ee7752, #dd86a8, #a1c4fd, #c2e9fb);
+  background: linear-gradient(-45deg, #052488, #456ded, #a1c4fd, #c2e9fb);
   background-size: 400% 400%;
   animation: gradient 7s ease infinite;
-}
-
-.textintro {
-  text-align: center;
-}
-
-.arrow {
-  border-color: transparent;
-  border-style: solid;
-  border-width: 0 2em;
-  display: block;
-  height: 0;
-  margin-bottom: 10vh;
-  opacity: 0.4;
-  text-indent: -9999px;
-  transform-origin: 50% 50%;
-  width: 0;
-}
-
-.down {
-  animation: downarrow 0.6s infinite alternate ease-in-out;
-  border-top: 2em solid white;
+  height: 100vh;
+  justify-content: space-around ;
 }
 
 .head {
   display: flex;
-  height: 40vh;
+  position: relative ;
+  top: -9%; 
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #logo2 {
   display: flex;
-  width: 20vh;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 140px ; 
 }
 
-a {
+#cs {
+  position: relative ;
+  left: 4% ;
+}
+
+#ap {
+  position: relative ;
+  right: 4% ;
+}
+
+.head a {
+  text-decoration: none;
+  color: black; 
+  font-size: 1.2em; 
+}
+
+
+.container a {
+  font-family: 'Avenir' ;
   text-decoration: none;
   color: black;
+  font-size: 1.7em ; 
+  font-weight: 600; 
 }
 
 .top {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Avenir', sans-serif;
   margin-left: 100px;
   margin-right: 100px;
 
 }
 
 .top:hover {
-  color: #777;
-  transition: .30s ease-in-out;
+  color: white;
+  transition: .45s ease-in-out;
+
 }
 
 .container {
@@ -129,10 +184,15 @@ a {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  position: relative ;
+  top: -15%; 
+  height: 20vh ; 
+}
+#es {
+  align-self: flex-start ;
 }
 
 .options {
-  font-family: 'Manrope', sans-serif;
   font-weight: 600;
   border: solid black 1px;
   margin: 50px 50px 50px 50px;
@@ -141,31 +201,50 @@ a {
   -webkit-box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 1);
   -moz-box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 1);
   box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 1);
+  width: 160px;
+  height: 55px;
+  display: flex;
+  position: relative ; 
+  align-items: center;
+  justify-content: center;
+
+}
+
+.clic {
+  padding: 50px ; 
 }
 
 .options:hover {
-  background-color: black;
-  color: white;
-  -webkit-box-shadow: 5px 5px 0px 2px rgb(255, 255, 255, 1);
-  -moz-box-shadow: 5px 5px 0px 2px rgb(255, 255, 255, 1);
-  box-shadow: 5px 5px 0px 2px rgba(255, 255, 255, 1);
-  transition: all ease 0.25s;
+  background-color: #7692F8;
+  /* background-color: #774CE0 ; */
+  -webkit-box-shadow: 5px 5px 0px 2px black;
+  -moz-box-shadow: 5px 5px 0px 2px black;
+  box-shadow: 5px 5px 0px 2px black;
+  transition: all ease .75s;
+
 }
+
+.options:hover .blanc {
+  color: white ;
+  transition: all ease .75s;
+}
+
 
 /* POP-UP SECTION */
 
 .button {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Avenir', sans-serif;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1rem;
   display: inline-block;
   color: #000;
-  margin: 50px 0;
-}
-
-.button:hover {
-  color: #777;
-  transition: .30s ease-in-out;
+  margin: 0 0;
+  /* width: 10px ; 
+  height: 10px ;  */
+  position: absolute ;
+  top: 2% ;
+  left: 92% ;
+  z-index: 1;
 }
 
 .popup {
@@ -240,9 +319,23 @@ a {
   height: 1.5rem;
   font-weight: 500;
   z-index: 4;
-  color: #000;
+  color:black;
   line-height: 2rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+}
+
+
+/* Block Scroll  */
+
+#main-wrap>div
+{
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+#block-up-arrow, #block-down-arrow {
+  cursor: pointer;
 }

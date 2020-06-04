@@ -5,50 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="accueil.css">
     <title>MissionDev</title>
-    <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,600&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=UgVFDe78c2KNoZpwShp-L1OONJU_1a39pV-Bjp04A01PIttYTj54a07YHQZzTnxxrIlynqlA7UEKNYTzeoQHAbUE4WXD43AfyndvFnr_hz4t0KQ-ByFws0pTCmU-Ry0WOF-AkO90FRF8Vy0URs5Ywg" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="accueil.css">
+
+
 </head>
 
 <body>
 
-    <div class="parallax">
+    <div id="main-wrap">
+        <div class="parallax">
 
-        <div class="image one">
-            <img class="logo1" src="img/logo.png" alt="logo MissionDev">
+            <div class="image one">
+                <img class="logo1" src="img/logo.png" alt="logo MissionDev">
 
-            <p class="textintro">Sur ce site, vous allez pouvoir trouver votre poursuite d’études en développement pour
-                l’après MMi, alors c’est parti !</p>
-            <a href="#content" class="arrow down">Down</a>
-        </div>
-    </div>
-
-    <div id="content" class="content">
-
-        <div class="head">
-            <a id="cs" class="top" href="conseils.html">Conseils</a>
-            <a class="top" href="#"><img id="logo2" src="img/logoBW.png" alt=""></a>
-            <a id="ap" class="top" href="apropos.php">À propos</a>
-        </div>
-
-        <div class="container">
-            <a id="uni" class="options" href="universites.html">Universités</a>
-            <a id="es" class="options" href="ecoles-spe.html">Écoles spécialisées</a>
-            <a id="ei" class="options" href="ecoles-ing.html">Écoles d'ingénieur</a>
-        </div>
-            <a class="button" href="#popup">Perdu ?</a>
-            <div class="popup" id="popup">
-              <div class="popup-inner">
-                <div class="popuptext">
-                  <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le fromage, et Macron
-
-                </p>
-                </div>
-                <a class="closepopup" href="#content">X</a>
-              </div>
+                <p class="textintro">La pluridisciplinarité du DUT MMi vous permet de poursuivre vos études en
+                    développement. <br>Ici, vous allez pouvoir vous orienter pour enfin choisir la formation faite pour
+                    vous.</p>
+                <a href="#content" class="arrow down">Down</a>
             </div>
+        </div>
+
+        <div id="content" class="content">
+
+            <div class="head">
+                <a id="cs" class="top" href="conseils.html">Conseils</a>
+                <a class="top" href="#"><img id="logo2" src="img/logoBW.png" alt=""></a>
+                <a id="ap" class="top" href="apropos.php">À propos</a>
+            </div>
+
+            <div class="container">
+                <div class="options" id="uni" href="universites.php">
+                    <a href="universites.php" class="clic blanc">Universités</a>
+                    <a class="button blanc" href="#popup">?</a>
+                    <div class="popup" id="popup">
+                        <div class="popup-inner">
+                            <div class="popuptext">
+                                <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le
+                                    fromage, et Macron
+
+                                </p>
+                            </div>
+                            <a class="closepopup" href="#content">X</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="options" id="es">
+                    <a href="ecoles-spe.php" class="clic blanc">Écoles spécialisées</a>
+                    <a class="button blanc" href="#popup">?</a>
+                    <div class="popup" id="popup">
+                        <div class="popup-inner">
+                            <div class="popuptext">
+                                <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le
+                                    fromage, et Macron
+
+                                </p>
+                            </div>
+                            <a class="closepopup" href="#content">X</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="options" id="ei">
+                    <a href="ecoles-ing.php" class="clic blanc">Écoles d'ingénieur</a>
+                    <a class="button blanc" href="#popup">?</a>
+                    <div class="popup" id="popup">
+                        <div class="popup-inner">
+                            <div class="popuptext">
+                                <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le
+                                    fromage, et Macron
+
+                                </p>
+                            </div>
+                            <a class="closepopup" href="#content">X</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </body>
