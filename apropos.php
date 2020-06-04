@@ -15,7 +15,7 @@
     <header>
 
         <div class="intro">
-            <h1>Qui sommes nous?</h1>
+            <h1>Notre Projet</h1>
             <p>Agence dédiée à la promotion de l'ensemble des poursuites d'études spécialisées dans le développement
                 accessible après un DUT MMi. <span> MissionDev </span> est un projet basé sur la volonté d'aider les
                 étudiants <span> MMI
@@ -70,14 +70,14 @@
         <div>
         <img src="img/paul.png" alt="">
         <h3>Paul - Chef de projet</h3>
-        <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le fromage, et Macron </p>
+        <p>18 ans, passionné par la photographie et la vidéo, je suis le chef de projet de MissionDev. Si vous souhaitez en savoir plus (en vrai je suis intéressant), vous pouvez vous rendre sur mon CV numérique juste ici grâce à ce magnifique bouton ;)</p>
         <a href="#">Venez découvrir mon CV ici</a>
         </div>
 
         <div class="right">
         <img src="img/michelle.png" alt="">
         <h3>Michelle - Développeuse</h3>
-        <p>J'aime coder, penser, resoudre des problèmes et avoir des expériences de vie!</p>
+        <p>J'aime coder, penser, <span>resoudre des problèmes</span>. Je vis motivée pour apprendre grâce ma <span>curiosité</span> & avoir le plus possible d'<span>expériences de vie</span>! :p</p>
         <a href="#">Venez découvrir mon CV ici</a>
         </div>
 

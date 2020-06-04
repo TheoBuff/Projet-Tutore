@@ -65,7 +65,7 @@
 
     if(isset($_GET['q'])) {
         $q = htmlspecialchars($_GET{'q'});
-        $formation = $db->query('SELECT CONCAT(nom_complet, " ", nom_etablissement) concatenation, diplome FROM formation  WHERE nom_complet OR nom_etablissement LIKE "%'.$q.'%" AND diplome = "Bachelor" ORDER BY concatenation ASC' );
+        $formation = $db->query('SELECT CONCAT(nom_complet, " ", nom_etablissement) concatenation, diplome FROM formation  WHERE nom_complet  OR nom_etablissement LIKE "%'.$q.'%" AND diplome = "Bachelor" ORDER BY concatenation ASC' );
     }
 
 
