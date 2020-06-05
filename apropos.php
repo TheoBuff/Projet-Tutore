@@ -7,11 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MissionDev</title>
     <link rel="stylesheet" href="apropos.css">
+    <link rel="stylesheet" href="menu.css">
     <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
-    <a href="accueil.html"> <img src="img/LogoBW.png"></a>
+    <div id="myDIV">
+        <nav class="menun">
+            <a onclick="myFunction()" href="#" class="popupi"><img src="img/menu/retour.png" alt="Retourner"></a>
+            <a class="logocontainer" href="index.html"> <img class="logo" src="img/LogoBW.png"></a>
+            <div class="popupi"><img src="" alt=""></div>
+        </nav>
+        <div>
+            <ul class="line-ul">
+                <li class="box-li"><a class="nodec" href="conseils.html"><img class="miniature" src="img/menu/lamp.svg" alt="">Conseils</a></li>
+                <li class="box-li"><a class="nodec" href="https://www.instagram.com/mission.dev/?hl=fr"><img class="miniature" src="img/menu/instagram.svg" alt="">Instagram</a></li>
+                <li class="box-li"><a class="nodec" href="apropos.php"><img class="miniature" src="img/menu/question-mark.svg" alt="">À Propos</a></li>
+            </ul>
+            <ul class="line-ul">
+                <li class="box-li"><a class="nodec" href="universites.php"><img class="miniature" src="img/menu/school.svg" alt="">Universités</a></li>
+                <li class="box-li"><a class="nodec" href="ecoles-spe.php"><img class="miniature" src="img/menu/data.svg" alt="">Écoles spécialisées</a></li>
+                <li class="box-li"><a class="nodec" href="ecoles-ing.php"><img class="miniature" src="img/menu/university.svg" alt="">École d'ingénieur</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <nav class="mainnav">
+        <a class="popupi" href="#myDIV" onclick="myFunction()" ><img src="img/popup.png" alt="Menu"></a>
+        <a class="logocontainer" href="index.html"> <img class="logo" src="img/LogoBW.png"></a>
+        <div class="popupi"><img src="" alt=""></div>
+    </nav>
+
     <header>
 
         <div class="intro">
@@ -67,48 +95,52 @@
     </header>
 
     <div class="cvs">
-        <div>
-        <img src="img/paul.png" alt="">
-        <h3>Paul - Chef de projet</h3>
-        <p>18 ans, passionné par la photographie et la vidéo, je suis le chef de projet de MissionDev. Si vous souhaitez en savoir plus (en vrai je suis intéressant), vous pouvez vous rendre sur mon CV numérique juste ici grâce à ce magnifique bouton ;)</p>
-        <a href="#">Venez découvrir mon CV ici</a>
+        <div class="left">
+            <img class="portrait imgleft" src="img/paul.png" alt="">
+            <div class="contain-left">
+                <h3>Paul - Chef de projet</h3>
+                <p>18 ans, passionné par la photographie et la vidéo, je suis le chef de projet de MissionDev. Si vous souhaitez en savoir plus (en vrai je suis intéressant), vous pouvez vous rendre sur mon CV numérique juste ici grâce à ce magnifique bouton ;)</p>
+                <a href="https://paulbarbosa.fr">Venez découvrir mon CV ici</a><br>
+                <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Paul" class="socialmedia"></a>
+            </div>
         </div>
 
         <div class="right">
-        <img src="img/michelle.png" alt="">
-        <h3>Michelle - Développeuse</h3>
-        <p>J'aime coder, penser, <span>resoudre des problèmes</span>. Je vis motivée pour apprendre grâce ma <span>curiosité</span> & avoir le plus possible d'<span>expériences de vie</span>! :p</p>
-        <a href="#">Venez découvrir mon CV ici</a>
+            <img class="portrait imgright" src="img/michelle.png" alt="">
+            <div class="contain-right">
+                <h3>Michelle - Développeuse</h3>
+                <p>J'aime coder, penser, <span>resoudre des problèmes</span>. Je vis motivée pour apprendre grâce ma <span>curiosité</span> & avoir le plus possible d'<span>expériences de vie</span>! :p</p>
+                <a href="#">Venez découvrir mon CV ici</a><br>
+                <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Michelle" class="socialmedia"></a>
+            </div>
         </div>
 
-        <div>
-        <img src="img/theo.png" alt="">
-        <h3>Théo - Développeur</h3>
-        <p>Passioné de jeux vidéos, de musique métal et du la culture Geek, je cherche à faire sans cesse de
-                nouvelles rencontres et discuter, alors si vous vous reconnaisez dans cette description venez me trouver
-                sur les réseaux</p>
-        <a href="#">Venez découvrir mon CV ici</a>
+        <div class="left">
+            <img class="portrait imgleft" src="img/theo.png" alt="">
+            <div class="contain-left">
+                <h3>Théo - Développeur</h3>
+                <p>Passioné de jeux vidéos, de musique métal et du la culture Geek, je cherche à faire sans cesse de
+                        nouvelles rencontres et discuter, alors si vous vous reconnaisez dans cette description venez me trouver
+                        sur les réseaux</p>
+                <a href="#">Venez découvrir mon CV ici</a><br>
+                <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Théo" class="socialmedia"></a>
+            </div>
         </div>
 
         <div class="right">
-        <img src="img/leonard.png" alt="">
-        <h3>Léonard - Graphiste</h3>
-        <p>franchement j’adore coder c’est une passion j’adore la France, les baguettes, le fromage, et Macron </p>
-        <a href="#">Venez découvrir mon CV ici</a>
+            <img class="portrait imgright" src="img/leonard.png" alt="">
+            <div class="contain-right">
+                <h3>Léonard - Graphiste</h3>
+                <p>J'ai rédigé la charte graphique et codé la mise en page de MissionDev.</p>
+                <a href="https://perso-etudiant.u-pem.fr/~lkim1">Venez découvrir mon CV ici</a><br>
+                <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Léonard" class="socialmedia"></a>
+            </div>
         </div>
+
     </div>
 
     <footer>
-        
-<!-- <div class="test">
-        <img src="img/test.png" alt="Instagram de MissionDev">
-</div> -->
-        <a href="https://www.instagram.com/mission.dev/" target="_blank"><img src="img/insta.png" alt="Instagram de MissionDev" class="socialmedia"> </a>
-        <a href="" target="_blank"><img src="img/twitter.png" alt="Twitter de MissionDev" class="socialmedia"> </a>
-        <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Paul" class="socialmedia"></a>
-        <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Michelle" class="socialmedia"></a>
-        <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Théo" class="socialmedia"></a>
-        <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Léonard" class="socialmedia"></a>
+        <p>Rejoignez-nous aussi sur<a class="instap" href="https://www.instagram.com/mission.dev/" target="_blank"><img src="img/insta.png" alt="Instagram de MissionDev" class="instagram">Instagram !</a></p>        
     </footer>
 
 

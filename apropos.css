@@ -1,6 +1,34 @@
+/* version regular */
+@font-face {
+    font-family: 'Avenir' ;
+    src: url(font/avenirRegular.woff2) format('woff2') , 
+         url(font/avenirRegular.woff) format('woff') ;
+    font-weight: normal ;
+    font-style: normal ; 
+  }
+  
+  /* version bold */
+  @font-face {
+    font-family: 'Avenir' ;
+    src: url(font/avenirBold.woff2) format('woff2') , 
+         url(font/avenirBold.woff) format('woff') ;
+    font-weight: bold ;
+    font-style: normal ; 
+  }
+  
+  /* version italic */
+  @font-face {
+    font-family: 'Avenir' ;
+    src: url(font/avenirItalic.woff2) format('woff2') , 
+         url(font/avenirItalic.woff) format('woff') ;
+    font-weight: normal ;
+    font-style: italic ; 
+  }
+  
+
 body {
-    font-family: 'Manrope', sans-serif;
-    min-width: 1130px;
+    font-family: 'Avenir', sans-serif;
+    /* min-width: 1130px; */
     margin: auto;
     text-align: center;
 
@@ -8,13 +36,18 @@ body {
 
 h1 {
     font-size: 3em;
+    color:#000;
+    text-shadow: rgba(0, 0, 0, 0.479) 3px 3px;
     /* margin-bottom: -30px; */
     /* margin-top: 0.5%; */
 }
-h2{
+
+h2 {
     font-size: 2em;
     margin-top: 50px;
-    font-weight: 300; 
+    font-weight: 300;
+    color:#000;
+    text-shadow: rgba(0, 0, 0, 0.479) 1px 1px;
 }
 
 
@@ -31,51 +64,40 @@ header {
 
 
 }
-span{
-    color: #062083;
-}
 
-
-img {
-    width: 14%;
-    height: 3%;
-    margin-top: 2%;
-    margin-left: 0%;
-    margin-bottom: 1%;
-}
-
-.intro{
+.intro {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     max-width: 40%;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .intro p {
-font-size: 1.45rem;
-line-height:150%;
-} 
+    font-size: 1.45rem;
+    line-height: 150%;
+}
 
-.contact{
+.contact {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     margin-left: 5%;
     margin-right: 10%;
 }
 
-.bot{
+.bot {
     color: white;
     background-color: #062083;
-    transition-property: color, background-color; 
+    transition-property: color, background-color;
     transition-duration: 0.5s, 0.5s;
-    transition-timing-function: linear, ease-in; 
+    transition-timing-function: linear, ease-in;
     padding: 8px 30px 8px 30px;
     border: none;
     font-size: 1rem;
 
 }
-.bot:hover{
+
+.bot:hover {
     background-color: transparent;
     color: rgb(243, 242, 242);
     border: solid 1px #062083;
@@ -83,50 +105,144 @@ line-height:150%;
 
 }
 
-input[type=text], select , input[type=email], textarea{
+input[type=text],
+select,
+input[type=email],
+textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-  }
-  input[type=text], input[type=email], textarea{
-       box-shadow: 4px 5px 0px 0px #062083; 
-  }
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    box-shadow: 4px 5px 0px 0px #062083;
+}
 
 
 /* j'arrive pas a mettre le box shadow */
 
 /* input:required{
-    border-color: red; 
-}
-input:required:valid{
-    border-color: green;
-} */
-a{
+    /* border: 1px solid #D00; */
+/* } */
+/* input:required:valid{
+    border: 1px solid #0D0;
+} */ */
+
+a {
     text-decoration: none;
     color: teal;
 
 }
-a:visited{
+
+a:visited {
     text-decoration: none;
 }
-.cvs{
-    margin-bottom: 100px;
+
+.cvs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px 0;
 }
 
-footer{
-    background-color: black;
-}
-.socialmedia{
-    margin: 0px 7px 0px 7px;
-}
-.cv{
+
+.cv {
     display: flex;
 }
-.right{
-    flex-direction:row-reverse;
+
+span {
+    font-weight: 800;
+    color: #062083;
+
+}
+
+.left {
+    flex-direction: row;
+    padding: 10px;
+    margin: 30px 75px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-right: 20%;
+    align-self: flex-start;
+}
+
+
+.right {
+    flex-direction: row-reverse;
+    padding: 10px;
+    margin: 75px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-left: 20%;
+    align-self: flex-end;
+}
+
+.portrait {
+    max-width: 150px;
+    margin: 0;
+    box-shadow: 4px 5px 0px 0px #062083;
+}
+
+.imgleft {
+    margin-right: 50px;
+}
+
+.imgright {
+    margin-left: 50px;
+}
+
+.contain-left {
+    text-align: left;
+}
+
+.contain-right {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: #062083;
+}
+
+footer {
+    background-color: #cacaca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+footer p {
+    color: #000;
+    text-align: center;
+    font-size: 2em;
+    margin: 200px;
+}
+
+.socialmedia {
+    width: 100px;
+    margin-top: 1em;
+}
+
+.instagram {
+    width: 50px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.instap {
+    color: #555;
 }
 /* .test{
     background-color: white;

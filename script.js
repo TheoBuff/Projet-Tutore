@@ -7,8 +7,9 @@ $(document).ready(function(){
 
       $(function() {
         var blockScroller = $("#main-wrap").blockScroll();
-  });
-  
+    });
+});
+
 "use strict";
 
 
@@ -18,9 +19,19 @@ $(document).on('click', '.arrow', function (event) {
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
+});
 
-});
-});
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
 
 // Block Scroll
 
@@ -247,21 +258,3 @@ $(document).on('click', '.arrow', function (event) {
     };
 }(this.jQuery || this.Zepto));
 
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-
-
-$(document).on('click', '.arrow', function (event) {
-  event.preventDefault();
-
-  $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-  }, 500);
-});

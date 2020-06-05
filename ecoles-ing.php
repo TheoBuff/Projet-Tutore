@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <div id="myDIV">
+<div id="myDIV">
         <nav class="menun">
             <a onclick="myFunction()" href="#" class="popupi"><img src="img/menu/retour.png" alt="Retourner"></a>
-            <a class="logocontainer" href="accueil.html"> <img class="logo" src="img/LogoBW.png"></a>
+            <a class="logocontainer" href="index.html"> <img class="logo" src="img/LogoBW.png"></a>
             <div class="popupi"><img src="" alt=""></div>
         </nav>
         <div>
@@ -36,7 +36,7 @@
     </div>
     <nav class="mainnav">
         <a class="popupi" href="#myDIV" onclick="myFunction()" ><img src="img/popup.png" alt="Menu"></a>
-        <a class="logocontainer" href="accueil.html"> <img class="logo" src="img/LogoBW.png"></a>
+        <a class="logocontainer" href="index.html"> <img class="logo" src="img/LogoBW.png"></a>
         <div class="popupi"><img src="" alt=""></div>
     </nav>
 

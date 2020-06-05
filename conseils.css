@@ -1,6 +1,32 @@
+/* version regular */
+@font-face {
+    font-family: 'Avenir' ;
+    src: url(font/avenirRegular.woff2) format('woff2') , 
+         url(font/avenirRegular.woff) format('woff') ;
+    font-weight: normal ;
+    font-style: normal ; 
+  }
+  
+  /* version bold */
+  @font-face {
+    font-family: 'Avenir' ;
+    src: url(font/avenirBold.woff2) format('woff2') , 
+         url(font/avenirBold.woff) format('woff') ;
+    font-weight: bold ;
+    font-style: normal ; 
+  }
+  
+  /* version italic */
+  @font-face {
+    font-family: 'Avenir' ;
+    src: url(font/avenirItalic.woff2) format('woff2') , 
+         url(font/avenirItalic.woff) format('woff') ;
+    font-weight: normal ;
+    font-style: italic ; 
+  }
+
 body {
-    font-family: 'Manrope', sans-serif;
-    min-width: 1130px;
+    font-family: 'Avenir', sans-serif;
     margin: auto;
     text-align: center;
     font-size: 1.5em;
