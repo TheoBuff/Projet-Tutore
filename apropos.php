@@ -119,9 +119,9 @@
             <img class="portrait imgleft" src="img/theo.png" alt="">
             <div class="contain-left">
                 <h3>Théo - Développeur</h3>
-                <p>Passioné de jeux vidéos, de musique métal et du la culture Geek, je cherche à faire sans cesse de
+                <p>Passioné de <span>Jeux vidéos</span>, de musique <span>Métal </span>et du la culture <span>Geek</span>, je cherche à faire sans cesse de
                         nouvelles rencontres et discuter, alors si vous vous reconnaisez dans cette description venez me trouver
-                        sur les réseaux</p>
+                        sur les <span>Réseaux</span></p>
                 <a href="#">Venez découvrir mon CV ici</a><br>
                 <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Théo" class="socialmedia"></a>
             </div>

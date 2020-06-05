@@ -63,7 +63,7 @@
     $db = new PDO('mysql:host=localhost;dbname=projettut', 'root', '');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
-    $formation = $db->query('SELECT CONCAT(nom_complet," ",nom_etablissement) concatenation FROM formation ORDER BY id');
+    $formation = $db->query('SELECT CONCAT(nom_complet," ",nom_etablissement) concatenation FROM formation WHERE diplome = "Licence pro" ORDER BY id');
 
     if(isset($_GET['q'])) {
         $q = htmlspecialchars($_GET{'q'});
