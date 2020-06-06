@@ -232,7 +232,6 @@ footer p {
 
 .socialmedia {
     width: 100px;
-    margin-top: 1em;
 }
 
 .instagram {
@@ -243,6 +242,12 @@ footer p {
 
 .instap {
     color: #555;
+}
+
+br {
+    content: "" !important;
+    display: block !important;
+    margin-bottom: 1em !important;
 }
 /* .test{
     background-color: white;

@@ -93,8 +93,13 @@
 }
 
 a.nodec:hover img.miniature {
-    -webkit-filter: invert(1);
-    filter: invert(1);
+    /* -webkit-filter: invert(1);
+    filter: invert(1); */
+    background-color: #77F;
+    border: solid white 1px;
+    -webkit-box-shadow: 5px 5px 0px 2px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 5px 5px 0px 2px rgba(255, 255, 255, 1);
+    box-shadow: 5px 5px 0px 2px rgba(255, 255, 255, 1);
     transition: all ease 0.25s;
 }
 

@@ -100,7 +100,8 @@
             <div class="contain-left">
                 <h3>Paul - Chef de projet</h3>
                 <p>18 ans, passionné par la photographie et la vidéo, je suis le chef de projet de MissionDev. Si vous souhaitez en savoir plus (en vrai je suis intéressant), vous pouvez vous rendre sur mon CV numérique juste ici grâce à ce magnifique bouton ;)</p>
-                <a href="https://paulbarbosa.fr">Venez découvrir mon CV ici</a><br>
+                <a href="https://paulbarbosa.fr" target="_blank">Voir CV Numérique</a><br>
+                <a href="" target="_blank">Télécharger CV</a><br>
                 <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Paul" class="socialmedia"></a>
             </div>
         </div>
@@ -110,7 +111,8 @@
             <div class="contain-right">
                 <h3>Michelle - Développeuse</h3>
                 <p>J'aime coder, penser, <span>resoudre des problèmes</span>. Je vis motivée pour apprendre grâce ma <span>curiosité</span> & avoir le plus possible d'<span>expériences de vie</span>! :p</p>
-                <a href="#">Venez découvrir mon CV ici</a><br>
+                <a href="#" target="_blank">Voir CV Numérique</a><br>
+                <a href="" target="_blank">Télécharger CV</a><br>
                 <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Michelle" class="socialmedia"></a>
             </div>
         </div>
@@ -122,7 +124,8 @@
                 <p>Passioné de <span>Jeux vidéos</span>, de musique <span>Métal </span>et du la culture <span>Geek</span>, je cherche à faire sans cesse de
                         nouvelles rencontres et discuter, alors si vous vous reconnaisez dans cette description venez me trouver
                         sur les <span>Réseaux</span></p>
-                <a href="#">Venez découvrir mon CV ici</a><br>
+                <a href="#" target="_blank">Voir CV Numérique</a><br>
+                <a href="" target="_blank">Télécharger CV</a><br>
                 <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Théo" class="socialmedia"></a>
             </div>
         </div>
@@ -131,8 +134,9 @@
             <img class="portrait imgright" src="img/leonard.png" alt="">
             <div class="contain-right">
                 <h3>Léonard - Graphiste</h3>
-                <p>J'ai rédigé la charte graphique et codé la mise en page de MissionDev.</p>
-                <a href="https://perso-etudiant.u-pem.fr/~lkim1">Venez découvrir mon CV ici</a><br>
+                <p>J'ai rédigé la <span>charte graphique</span> et codé la <span>mise en page</span> de MissionDev.</p>
+                <a href="https://perso-etudiant.u-pem.fr/~lkim1" target="_blank">Voir CV Numérique</a><br>
+                <a href="" target="_blank">Télécharger CV</a><br>
                 <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Léonard" class="socialmedia"></a>
             </div>
         </div>
