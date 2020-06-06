@@ -25,19 +25,12 @@ header {
     margin-left: 43%;
 }
 
-h1 + p {
-    font-size: 35px;
-    font-weight: 600;
-    margin-bottom: -15px;
-}
-
 h1 {
     font-size: 4em;
     margin-bottom: -30px;
     margin-top: 0.5%;
     text-shadow: rgba(255, 255, 255, 0.479) 5px 5px;
 }
-
 
 .localisation {
     font-style: italic;
@@ -106,7 +99,8 @@ header > p {
 }
 
 .site {
-    margin-top: -25px;
+    margin-top: 20px;
+    
 }
 
 li{
@@ -133,4 +127,11 @@ h4{
 
 }
 
+p {
+    line-height: 1em;
+}
+
+.texte {
+    line-height: 1.5em;
+}
 

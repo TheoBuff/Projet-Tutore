@@ -88,7 +88,7 @@
 
     
 
-<?php
+
 
     <div class="container">
         <a class="box" href="#"><h3>Nom-Diplome</h3><h3>Nom-Diplome-Long</h3><p>Type-Diplome</p><p><img src="img/icone-localisation-box.png" alt="">Nom-Ecole - Commune (99)</p><p><span class="initiale">Initiale</span><span class="alternance">Alternance</span><span class="interview">Interview</span></p></a>
@@ -99,7 +99,6 @@
         <a class="box" href="#"><h3>Nom-Diplome</h3><h3>Nom-Diplome-Long</h3><p>Type-Diplome</p><p><img src="img/icone-localisation-box.png" alt="">Nom-Ecole - Commune (99)</p><p><span class="initiale">Initiale</span><span class="alternance">Alternance</span><span class="interview">Interview</span></p></a>
         <a class="box" href="#"><h3>Nom-Diplome</h3><h3>Nom-Diplome-Long</h3><p>Type-Diplome</p><p><img src="img/icone-localisation-box.png" alt="">Nom-Ecole - Commune (99)</p><p><span class="initiale">Initiale</span><span class="alternance">Alternance</span><span class="interview">Interview</span></p></a>
     </div>
-?>
 </body>
 
 </html>
