@@ -17,8 +17,8 @@
 #myDIV {
     /* background: linear-gradient(-45deg, #ee7752, #dd86a8, #a1c4fd, #c2e9fb); */
     /* background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%); */
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #4000b8, #4869ff);
-    background-size: 200% 200%;
+    background: linear-gradient(-45deg, #667eea, #764ba2);
+    background-size: 300% 300%;
     animation: gradient 15s ease infinite;
     overflow: hidden;
     width: 100%;
@@ -95,6 +95,7 @@
 a.nodec:hover img.miniature {
     -webkit-filter: invert(1);
     filter: invert(1);
+    background-color: #888800;
     transition: all ease 0.25s;
 }
 

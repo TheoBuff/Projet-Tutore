@@ -172,6 +172,7 @@ span {
     width: 100%;
     padding-right: 20%;
     align-self: flex-start;
+    font-size: 1.25em;
 }
 
 
@@ -185,10 +186,11 @@ span {
     width: 100%;
     padding-left: 20%;
     align-self: flex-end;
+    font-size: 1.25em;
 }
 
 .portrait {
-    max-width: 150px;
+    max-width: 250px;
     margin: 0;
     box-shadow: 4px 5px 0px 0px #062083;
 }
@@ -232,7 +234,6 @@ footer p {
 
 .socialmedia {
     width: 100px;
-    margin-top: 1em;
 }
 
 .instagram {
@@ -243,6 +244,12 @@ footer p {
 
 .instap {
     color: #555;
+}
+
+br {
+    content: "" !important;
+    display: block !important;
+    margin-bottom: 1em !important;
 }
 /* .test{
     background-color: white;

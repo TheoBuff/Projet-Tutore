@@ -65,6 +65,7 @@ h1 + p {
 ol {
     list-style: none;
     counter-reset: compteur;
+    margin: 50px 0;
     margin-left: 20%;
     margin-right: 24%;
     display: flex;
