@@ -86,7 +86,7 @@
 
             </form>
             <?php else: ?>
-                <p>Merci pour ton message ! <?php echo htmlspecialchars($_POST['prenom']); ?> </p>
+                <p>Merci pour ton message !</p>
             <p>Tu peux découvrir nos CVs interactifs ci-dessous</p>
             <?php endif; ?>
 
