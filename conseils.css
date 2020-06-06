@@ -71,12 +71,7 @@ ol {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
-    /*min-width: 1024px;*/
-} 
-/*min-width ol {  besoin d'aide ici pour faire en sorte que quand on est sur une largeur minimum de 1024 px pour une tablette on a plus de marges à gauche et à droite des parapgraphes des conseils pour qu'ils remplissent toute la page en largeur alors que sur une page de 1920 px de largeur il faut qu'elles gardent les marges gauche et droite pour être plus au centre 
-    margin-left: 0%;
-    margin-right: 0%;
-}*/
+}
 
 
 ol li {
@@ -115,12 +110,7 @@ img {
     margin-bottom: 1%;
 }
 .Conseil1 {
-    margin-left: 12px;
+    margin-left: 0px;
 }
-
-/*img:hover {
-    visibility: hidden;
-}
-/* si il y a un moyen de changer entre les 2 logos avec une transition au survol en css c'est ici qu'il faut le faire pour éviter de devoir faire du JS
 
 

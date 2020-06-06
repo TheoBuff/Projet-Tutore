@@ -42,18 +42,6 @@
 
     <header><h1>Écoles spécialisées</h1>
     <p>Retrouvez ici les diplômes proposés par les écoles spécialisées</p></header>
-           <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1">Licences</label>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2">Écoles</label>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label> -->
-        <!-- <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-        <label for="vehicle3"> I have a boat</label>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label> -->
 
         <form method="GET">
     <fieldset>
@@ -62,11 +50,14 @@
     $db = new PDO('mysql:host=localhost;dbname=projettut', 'root', '');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
-    $formation = $db->query('SELECT CONCAT(nom_complet," ",nom_etablissement) concatenation FROM formation WHERE diplome = "Bachelor"ORDER BY id');
+    $formation = $db->query('SELECT * FROM formation WHERE diplome = "Bachelor" ORDER BY id');
 
     if(isset($_GET['q'])) {
         $q = htmlspecialchars($_GET{'q'});
-        $formation = $db->query('SELECT CONCAT(nom_complet, " ", nom_etablissement) concatenation, diplome FROM formation  WHERE nom_complet  OR nom_etablissement LIKE "%'.$q.'%" AND diplome = "Bachelor" ORDER BY concatenation ASC' );
+        $formation = $db->query('SELECT * FROM formation  WHERE nom_complet LIKE "%'.$q.'%"  AND diplome = "Bachelor" OR nom_etablissement LIKE "%'.$q.'%"  AND diplome = "Licence pro" ORDER BY nom_complet ASC ' );
+        
+        
+        
     }
 
 
@@ -77,23 +68,17 @@
 
     </fieldset>
 </form>
+<div class="container">
 <?php  if($formation->rowcount() > 0) { ?>
     <?php while ($a = $formation->fetch()) {?>
-        <?= $a['concatenation']?><br>
+    <?php echo '
+        <a class="box" href="#"><h3>'.$a['nom_complet'].'</h3><p>'.$a['diplome'].'</p><p><img src="img/icone-localisation-box.png" alt="">'.$a['nom_etablissement'].' </p><p><span class="initiale">'.$a['initiale'].'</span><span class="alternance">'.$a['alternance'].'</span></p></a>';?>
     <?php } ?>
     <?php } else { ?>
         Aucun résultat pour: <?= $q ?> ...
     <?php } ?>
 
-    <div class="container">
-        <a class="box" href="#"><h3>Nom-Diplome</h3><h3>Nom-Diplome-Long</h3><p>Type-Diplome</p><p><img src="img/icone-localisation-box.png" alt="">Nom-Ecole - Commune (99)</p><p><span class="initiale">Initiale</span><span class="alternance">Alternance</span><span class="interview">Interview</span></p></a>
-        <a class="box" href="#"><h3>Nom-Diplome</h3><h3>Nom-Diplome-Long</h3><p>Type-Diplome</p><p><img src="img/icone-localisation-box.png" alt="">Nom-Ecole - Commune (99)</p><p><span class="initiale">Initiale</span><span class="alternance">Alternance</span><span class="interview">Interview</span></p></a>
-        <a class="box" href="#"><h3>Nom-Diplome</h3><h3>Nom-Diplome-Long</h3><p>Type-Diplome</p><p><img src="img/icone-localisation-box.png" alt="">Nom-Ecole - Commune (99)</p><p><span class="initiale">Initiale</span><span class="alternance">Alternance</span><span class="interview">Interview</span></p></a>
-        <a class="box" href="#"><h3>Nom-Diplome</h3><h3>Nom-Diplome-Long</h3><p>Type-Diplome</p><p><img src="img/icone-localisation-box.png" alt="">Nom-Ecole - Commune (99)</p><p><span class="initiale">Initiale</span><span class="alternance">Alternance</span><span class="interview">Interview</span></p></a>
-        <a class="box" href="#"><h3>Nom-Diplome</h3><h3>Nom-Diplome-Long</h3><p>Type-Diplome</p><p><img src="img/icone-localisation-box.png" alt="">Nom-Ecole - Commune (99)</p><p><span class="initiale">Initiale</span><span class="alternance">Alternance</span><span class="interview">Interview</span></p></a>
-        <a class="box" href="#"><h3>Nom-Diplome</h3><h3>Nom-Diplome-Long</h3><p>Type-Diplome</p><p><img src="img/icone-localisation-box.png" alt="">Nom-Ecole - Commune (99)</p><p><span class="initiale">Initiale</span><span class="alternance">Alternance</span><span class="interview">Interview</span></p></a>
-        <a class="box" href="#"><h3>Nom-Diplome</h3><h3>Nom-Diplome-Long</h3><p>Type-Diplome</p><p><img src="img/icone-localisation-box.png" alt="">Nom-Ecole - Commune (99)</p><p><span class="initiale">Initiale</span><span class="alternance">Alternance</span><span class="interview">Interview</span></p></a>
-    </div>
+    
 
 </body>
 
