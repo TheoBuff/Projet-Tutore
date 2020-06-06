@@ -284,14 +284,16 @@ p {
   justify-content: center;
   width: 95%;
   height: 100%;
-  padding: 1rem;
+  padding: 2rem;
+  line-height: 1.25rem;
 }
 
 .popuptext p {
   font-size: 1em;
   color: #000;
-  line-height: 1.5;
+  line-height: 2.25;
   margin: 0;
+  text-align: justify;
 }
 
 .popuptext a {
