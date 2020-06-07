@@ -99,7 +99,7 @@
             <img class="portrait imgleft" src="img/paul.png" alt="">
             <div class="contain-left">
                 <h3>Paul - Chef de projet</h3>
-                <p>18 ans, passionné par la photographie et la vidéo, je suis le chef de projet de MissionDev. Si vous souhaitez en savoir plus (en vrai je suis intéressant), vous pouvez vous rendre sur mon CV numérique juste ici grâce à ce magnifique bouton ;)</p>
+                <p>18 ans, passionné par la <span> photographie </span> et la <span> vidéo </span>, je suis le chef de projet de MissionDev. Si vous souhaitez en savoir plus (en vrai je suis intéressant), vous pouvez vous rendre sur mon <span> CV numérique </span> juste ici grâce à ce magnifique bouton ;)</p>
                 <a href="https://paulbarbosa.fr" target="_blank">Découvrez nos CV Numérique</a><br>
                 <a href="" target="_blank">Téléchargez mon CV au format PDF</a><br>
                 <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Paul" class="socialmedia"></a>

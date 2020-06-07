@@ -57,15 +57,7 @@
     if(isset($_GET['q'])) {
         $q = htmlspecialchars($_GET{'q'});
         $formation = $db->query('SELECT * FROM formation  WHERE nom_complet LIKE "%'.$q.'%"  AND diplome = "Licence pro" OR nom_etablissement LIKE "%'.$q.'%" AND diplome = "Licence pro" OR type_enseignement LIKE "%'.$q.'%" AND diplome = "Licence pro" ORDER BY nom_complet ASC ' );
-        
-        
-        
     }
-
-
-
-
-
         ?>
 
     </fieldset>

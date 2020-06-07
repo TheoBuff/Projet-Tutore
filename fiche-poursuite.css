@@ -37,7 +37,9 @@ h1 {
 }
 
 header > p {
-    text-shadow: rgba(0, 0, 0, 0.404) 3px 3px;
+    text-shadow: rgba(0, 0, 0, 0.404) 2px 2px;
+    font-weight: 600;
+    font-size: 1.2em;
 }
 
 .titres {
@@ -46,7 +48,7 @@ header > p {
 
 .Savoir {
     border: solid black 1px; 
-    margin: 2.5% 50% -20% 6%;
+    margin: 2.5% 55% -20% 6%;
     padding: 2% 3% 2% 2%;
     background-color: whitesmoke;
     -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
@@ -63,7 +65,7 @@ header > p {
     -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
     -moz-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
     box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
-    min-width: 400px;
+    max-width: 500px;
 }
 
 .Matières {
@@ -74,7 +76,7 @@ header > p {
     -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
     -moz-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
     box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
-    min-width: 400px;
+    max-width: 500px;
 }
 
 
@@ -90,7 +92,7 @@ header > p {
 
 .Informations {
     border: solid black 1px; 
-    margin: -25% 50% 10% 6%;
+    margin: -25% 55% 10% 6%;
     padding: 2% 4% 2% 4%;
     -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
     -moz-box-shadow: 5px 5px 0px 2px rgba(0,0,0,1);
@@ -135,3 +137,19 @@ p {
     line-height: 1.5em;
 }
 
+.Savoir > p {
+    line-height: 1.5em;
+}
+
+.Informations > p {
+    line-height: 1.2em;
+}
+
+span {
+    font-weight: 800;
+    color: #062083;
+}
+
+.lien-bleu {
+    color: #062083;
+}    

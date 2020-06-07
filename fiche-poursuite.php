@@ -21,38 +21,36 @@ $db = new PDO('mysql:host=localhost;dbname=projettut', 'root', '');
         ?>
 
     <div class="container">
-        <?php  if($formation->rowCount() > 0) { 
-        while ($a = $formation->fetch()) {
-            var_dump($a);
+    <?php
+       $a = $formation->fetch();
          echo '<header><h1>'.$a['nom_etablissement'].'</h1> <p>'.$a['nom_complet'].'</p>  <div class="localisation"> <p><img src="img/icone-localisation.png" alt="localisation" width="30px" height="30px"></p>
     </div></header> 
     <main>
-    <div class"Savoir"><h4> Ce que tu dois savoir </h4> 
-            <p>Ce que tu a à savoir, est que cette formation ammène à obtenir un diplome de '.$a['
-            diplome'].' donc tu dois bien être sûr que tu veux faire tes études vers ce type de diplome sachant que cette formation mène a devenir la plupart du temps '.$a['debouche_1'].' tu peux toujours aller consulter la page de cette université directement par le lien plus bas si tu souhaites obtenir des informations supplémentaires</p>
+    <div class="Savoir"><h4><span> Ce que tu dois savoir </span></h4> 
+            <p>Ce que tu as à <span> savoir </span>, est que cette formation ammène les étudiants un diplome de <span>'.$a['diplome'].'</span>. tu dois donc être bien sûr que tu veux faire tes études pour obtenir ce diplôme. Sachant que cette formation a pour principale débouché de devenir <span>'.$a['debouche_1'].'</span>. Tu peux toujours aller consulter la page de cette université directement par le <span> lien </span> plus bas si tu souhaites obtenir des informations supplémentaires</p>
         </div>
 
-         <div class="Matières"><h4> Les Matières enseignées </h4> 
+         <div class="Matières"><h4><span> Les Matières enseignées <span></h4> 
             <ul>
-                <li>'.$a['matiere_1'].'</li>
+                <li><span>'.$a['matiere_1'].'</span></li>
                 <li>'.$a['matiere_2'].'</li>
-                <li>'.$a['matiere_3'].'</li>
+                <li><span>'.$a['matiere_3'].'</span></li>
                 <li>'.$a['matiere_4'].'</li>
-                <li>'.$a['matiere_5'].'</li>
+                <li><span>'.$a['matiere_5'].'</span></li>
             </ul>
         </div>
     
-        <div class="Débouchés"><h4> Les Débouchés </h4> 
+        <div class="Débouchés"><h4><span> Les Débouchés </span></h4> 
             <ul>
-                <li>'.$a['debouche_1'].'</li>
+                <li><span>'.$a['debouche_1'].'</span></li>
                 <li>'.$a['debouche_2'].'</li>
-                <li>'.$a['debouche_3'].'</li>
+                <li><span>'.$a['debouche_3'].'</span></li>
             </ul> 
         </div>
 
-        <div class="Informations"><h4> Les Informations essentielles </h4>
+        <div class="Informations"><h4><span> Les Informations essentielles </span></h4>
             <p class="texte">'.$a['diplome'].'</p>
-            <p class="site">lien vers le site de '.$a['nom_etablissement'].' : '.$a['lien_site'].'</p>
+            <p class="site">lien vers le site de '.$a['nom_etablissement'].' : <div class="lien-bleu"> '.$a['lien_site'].' </div></a></p>
          </div>
 
         
@@ -61,7 +59,7 @@ $db = new PDO('mysql:host=localhost;dbname=projettut', 'root', '');
 
 
     
-    } ?>
+     ?>
     </div>
 
 </body>
