@@ -6,11 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="fiche-poursuite.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="script.js"></script>
     <title>MissionDev</title>
     <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 </head>
 
 <body>
+
+<div id="myDIV">
+        <nav class="menun">
+            <a onclick="myFunction()" href="#" class="popupi"><img src="img/menu/retour.png" alt="Retourner"></a>
+            <a class="logocontainer" href="index.html"> <img class="logo" src="img/LogoBW.png"></a>
+            <div class="popupi"><img src="" alt=""></div>
+        </nav>
+        <div>
+            <ul class="line-ul">
+                <li class="box-li"><a class="nodec" href="conseils.html"><img class="miniature" src="img/menu/lamp.svg" alt="">Conseils</a></li>
+                <li class="box-li"><a class="nodec" href="https://www.instagram.com/mission.dev/?hl=fr"><img class="miniature" src="img/menu/instagram.svg" alt="">Instagram</a></li>
+                <li class="box-li"><a class="nodec" href="apropos.php"><img class="miniature" src="img/menu/question-mark.svg" alt="">À Propos</a></li>
+            </ul>
+            <ul class="line-ul">
+                <li class="box-li"><a class="nodec" href="universites.php"><img class="miniature" src="img/menu/school.svg" alt="">Universités</a></li>
+                <li class="box-li"><a class="nodec" href="ecoles-spe.php"><img class="miniature" src="img/menu/data.svg" alt="">Écoles spécialisées</a></li>
+                <li class="box-li"><a class="nodec" href="ecoles-ing.php"><img class="miniature" src="img/menu/university.svg" alt="">École d'ingénieur</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <nav class="mainnav">
+        <a class="popupi" href="#myDIV" onclick="myFunction()" ><img src="img/popup.png" alt="Menu"></a>
+        <a class="logocontainer" href="index.html"> <img class="logo" src="img/LogoBW.png"></a>
+        <div class="popupi"><img src="" alt=""></div>
+    </nav>
 
     <?php
 
@@ -27,14 +56,14 @@ $req = $db -> prepare($sql);
 $req -> execute(array(":id" => $_GET["id"]));
 $a = $req->fetch();  $req = null;
 echo '<header><h1>'.$a['nom_complet'].'</h1> 
-<p>'.$a['nom_etablissement'].'</p> 
+<p> <div class="localisation"> <img src="img/icone-localisation.png" alt="localisation" 
+width="30px" height="30px"> '.$a['nom_etablissement'].'</p> 
 
-<div class="localisation"> <p><img src="img/icone-localisation.png" alt="localisation" 
-width="30px" height="30px"></p>
-</div></header> 
+
+</header> 
 <main>
 <div class="Savoir"><h4><span> Ce que tu dois savoir </span></h4> 
-        <p>Ce que tu as à <span> savoir </span>, est que cette formation ammène les étudiants un diplome de <span>'.$a['diplome'].'</span>. tu dois donc être bien sûr que tu veux faire tes études pour obtenir ce diplôme. Sachant que cette formation a pour principale débouché de devenir <span>'.$a['debouche_1'].'</span>. Tu peux toujours aller consulter la page de cette université directement par le <span> lien </span> plus bas si tu souhaites obtenir des informations supplémentaires</p>
+        <p>Ce que tu as à <span> savoir </span>, c\'est que cette formation ammène les étudiants un diplome de <span>'.$a['diplome'].'</span>. tu dois donc être bien sûr que tu veux faire tes études pour obtenir ce diplôme. Sachant que cette formation a pour principale débouché de devenir <span>'.$a['debouche_1'].'</span>. Tu peux toujours aller consulter la page de cette université directement par le <span> lien </span> plus bas si tu souhaites obtenir des informations supplémentaires</p>
     </div>
 
      <div class="Matières"><h4><span> Les Matières enseignées <span></h4> 

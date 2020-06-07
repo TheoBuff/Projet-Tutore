@@ -60,12 +60,6 @@ header > p {
     margin-right: 15%;
 }
 
-
-/*img:hover {
-    visibility: hidden;
-}
-/* si il y a un moyen de changer entre les 2 logos avec une transition au survol en css c'est ici qu'il faut le faire pour éviter de devoir faire du JS */
-
 fieldset {
     border: none;
     padding-top: 10px;
@@ -75,7 +69,6 @@ fieldset {
 
 fieldset input[type="search"] {
     border: solid black 1px; 
-    /* margin: 40px 40px 40px 40px; */
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;

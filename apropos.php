@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="apropos.css">
     <link rel="stylesheet" href="menu.css">
     <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
     <script src="script.js"></script>
     <script src="jquery-3.4.1.min.js"></script>
 </head>

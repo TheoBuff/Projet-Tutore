@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="listes.css">
     <link rel="stylesheet" href="menu.css">
     <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
     <script src="script.js"></script>
     <script src="jquery-3.4.1.min.js"></script>
 </head>
@@ -54,7 +55,7 @@
 
     if(isset($_GET['q'])) {
         $q = htmlspecialchars($_GET{'q'});
-        $formation = $db->query('SELECT * FROM formation  WHERE nom_complet LIKE "%'.$q.'%"  AND diplome = "Bachelor" OR nom_etablissement LIKE "%'.$q.'%" AND diplome = "Bachelor" OR type_enseignement LIKE "%'.$q.'%" AND diplome = "Bachelor" ORDER BY nom_complet ASC ' );
+        $formation = $db->query('SELECT * FROM formation  WHERE nom_complet LIKE "%'.$q.'%"  AND diplome = "Bachelor" OR nom_etablissement LIKE "%'.$q.'%" AND diplome = "Bachelor" OR initiale_alternance LIKE "%'.$q.'%" AND diplome = "Bachelor" ORDER BY nom_complet ASC ' );
     }
         ?>
 
@@ -64,7 +65,7 @@
 <?php  if($formation->rowcount() > 0) { ?>
     <?php while ($a = $formation->fetch()) {?>
     <?php echo '
-        <a class="box"  href="fiche-poursuite.php?id='.$a['id'].'"><h3>'.$a['nom_complet'].'</h3><p>'.$a['diplome'].'</p><p><img src="img/icone-localisation-box.png" alt="">'.$a['nom_etablissement'].' </p><p><span class="initiale">'.$a['type_enseignement'].'</span></p></a>';
+        <a class="box"  href="fiche-poursuite.php?id='.$a['id'].'"><h3>'.$a['nom_complet'].'</h3><p>'.$a['diplome'].'</p><p><img src="img/icone-localisation-box.png" alt="">'.$a['nom_etablissement'].' </p><p><span class="initiale">'.$a['initiale_alternance'].'</span></p></a>';
     
     } ?>
     <?php } else { ?>
