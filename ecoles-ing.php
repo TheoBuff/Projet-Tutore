@@ -54,7 +54,7 @@
 
     if(isset($_GET['q'])) {
         $q = htmlspecialchars($_GET{'q'});
-        $formation = $db->query('SELECT * FROM formation  WHERE nom_complet LIKE "%'.$q.'%"  AND diplome = "Ingénieur" OR nom_etablissement LIKE "%'.$q.'%"  AND diplome = "Licence pro" ORDER BY nom_complet ASC ' );
+        $formation = $db->query('SELECT * FROM formation  WHERE nom_complet LIKE "%'.$q.'%"  AND diplome = "Ingénieur" OR nom_etablissement LIKE "%'.$q.'%" AND diplome = "Ingénieur" OR type_enseignement LIKE "%'.$q.'%" AND diplome = "Ingénieur" ORDER BY nom_complet ASC ' );
         
         
         
@@ -72,11 +72,14 @@
 <?php  if($formation->rowcount() > 0) { ?>
     <?php while ($a = $formation->fetch()) {?>
     <?php echo '
-        <a class="box" href="#"><h3>'.$a['nom_complet'].'</h3><p>'.$a['diplome'].'</p><p><img src="img/icone-localisation-box.png" alt="">'.$a['nom_etablissement'].' </p><p><span class="initiale">'.$a['initiale'].'</span><span class="alternance">'.$a['alternance'].'</span></p></a>'?>
-    <?php } ?>
+        <a class="box" href="#"><h3>'.$a['nom_complet'].'</h3><p>'.$a['diplome'].'</p><p><img src="img/icone-localisation-box.png" alt="">'.$a['nom_etablissement'].' </p><p><span class="initiale">'.$a['type_enseignement'].'</span></p></a>';
+
+    
+    } ?>
     <?php } else { ?>
         Aucun résultat pour: <?= $q ?> ...
     <?php } ?>
+    </div>
 
    
 </body>

@@ -86,8 +86,8 @@
 
             </form>
             <?php else: ?>
-                <p>Merci pour ton message !</p>
-            <p>Tu peux découvrir nos CVs interactifs ci-dessous</p>
+                <div class="formulair"><p>Merci pour ton message !</p>
+            <p>Tu peux découvrir nos CVs interactifs ci-dessous</p></div>
             <?php endif; ?>
 
         </div>

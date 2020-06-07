@@ -251,9 +251,7 @@ br {
     display: block !important;
     margin-bottom: 1em !important;
 }
-/* .test{
-    background-color: white;
+
+.formulair > p {
+    font-size: 1.5em;
 }
-.test:hover{
-    background-color: rgb(199, 80, 193);
-} */
