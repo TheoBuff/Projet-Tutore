@@ -60,7 +60,7 @@
             <?php if (!isset($_GET['success'])): ?>
 
             <form action="connect.php" method="POST">
-                <!-- <fieldset> -->
+            
 
                 <p>
                     <label for="nom">Nom</label><input type="text" required name="nom">
@@ -80,7 +80,7 @@
                 </p>
 
                 <p><textarea cols="40" rows="5" name="message" placeholder="Tu peux écrire ton message ici !"></textarea></p>
-                <!-- </fieldset> -->
+                
 
                 <input type="submit" value="Envoyer" class="bot" name="submit">
 
@@ -102,7 +102,7 @@
                 <p>18 ans, passionné par la <span> photographie </span> et la <span> vidéo </span>, je suis le chef de projet de MissionDev. Si vous souhaitez en savoir plus (en vrai je suis intéressant), vous pouvez vous rendre sur mon <span> CV numérique </span> juste ici grâce à ce magnifique bouton ;)</p>
                 <a href="https://paulbarbosa.fr" target="_blank">Découvrez nos CV Numérique</a><br>
                 <a href="" target="_blank">Téléchargez mon CV au format PDF</a><br>
-                <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Paul" class="socialmedia"></a>
+                <a href="https://www.linkedin.com/in/barbosapaul/" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Paul" class="socialmedia"></a>
             </div>
         </div>
 
@@ -111,9 +111,9 @@
             <div class="contain-right">
                 <h3>Michelle - Développeuse</h3>
                 <p>J'aime coder, penser, <span>resoudre des problèmes</span>. Je vis motivée pour apprendre grâce ma <span>curiosité</span> & avoir le plus possible d'<span>expériences de vie</span>! :p</p>
-                <a href="#" target="_blank">Découvrez nos CV Numérique</a><br>
+                <a href="#" target="_blank">Découvrez mon CV Numérique</a><br>
                 <a href="" target="_blank">Téléchargez mon CV au format PDF</a><br>
-                <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Michelle" class="socialmedia"></a>
+                <a href="https://www.linkedin.com/in/michelle-o-brien-33a270195/" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Michelle" class="socialmedia"></a>
             </div>
         </div>
 
@@ -124,9 +124,9 @@
                 <p>Passioné de <span>Jeux vidéos</span>, de musique <span>Métal </span>et du la culture <span>Geek</span>, je cherche à faire sans cesse de
                         nouvelles rencontres et discuter, alors si vous vous reconnaisez dans cette description venez me trouver
                         sur les <span>Réseaux</span></p>
-                <a href="#" target="_blank">Découvrez nos CV Numérique</a><br>
+                <a href="#" target="_blank">Découvrez mon CV Numérique</a><br>
                 <a href="" target="_blank">Téléchargez mon CV au format PDF</a><br>
-                <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Théo" class="socialmedia"></a>
+                <a href="https://www.linkedin.com/in/th%C3%A9o-buffet-953b8b197/" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Théo" class="socialmedia"></a>
             </div>
         </div>
 
@@ -135,9 +135,9 @@
             <div class="contain-right">
                 <h3>Léonard - Graphiste</h3>
                 <p>J'ai rédigé la <span>charte graphique</span> et codé la <span>mise en page</span> de MissionDev.</p>
-                <a href="https://perso-etudiant.u-pem.fr/~lkim1" target="_blank">Découvrez nos CV Numérique</a><br>
+                <a href="https://perso-etudiant.u-pem.fr/~lkim1" target="_blank">Découvrez mon CV Numérique</a><br>
                 <a href="" target="_blank">Téléchargez mon CV au format PDF</a><br>
-                <a href="" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Léonard" class="socialmedia"></a>
+                <a href="https://www.linkedin.com/in/l%C3%A9onard-kim-318390194/" target="_blank"><img src="img/linkedin.png" alt="Linkedin de Léonard" class="socialmedia"></a>
             </div>
         </div>
 
