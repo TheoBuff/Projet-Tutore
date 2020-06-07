@@ -67,12 +67,12 @@
     }
         ?>
 
-    </fieldset>
-</form>
-<div class="container">
-<?php  if($formation->rowcount() > 0) { ?>
-    <?php while ($a = $formation->fetch()) {?>
-    <?php echo '
+        </fieldset>
+    </form>
+    <div class="container">
+        <?php  if($formation->rowcount() > 0) { ?>
+        <?php while ($a = $formation->fetch()) {?>
+        <?php echo '
         <a class="box"  href="fiche-poursuite.php?id='.$a['id'].'"><h3>'.$a['nom_complet'].'</h3><p>'.$a['diplome'].'</p><p><img src="img/icone-localisation-box.png" alt="">'.$a['nom_etablissement'].' </p><p><span class="initiale">'.$a['initiale_alternance'].'</span></p></a>';
 
     
