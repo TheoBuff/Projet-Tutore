@@ -63,7 +63,7 @@ width="30px" height="30px"> '.$a['nom_etablissement'].'</p>
 </header> 
 <main>
 <div class="Savoir"><h4><span> Ce que tu dois savoir </span></h4> 
-        <p>Ce que tu as à <span> savoir </span>, c\'est que cette formation ammène les étudiants un diplome de <span>'.$a['diplome'].'</span>. tu dois donc être bien sûr que tu veux faire tes études pour obtenir ce diplôme. Sachant que cette formation a pour principale débouché de devenir <span>'.$a['debouche_1'].'</span>. Tu peux toujours aller consulter la page de cette université directement par le <span> lien </span> plus bas si tu souhaites obtenir des informations supplémentaires</p>
+        <p>C\'est que cette formation amène les étudiants vers un diplome de type <span>'.$a['diplome'].'</span>. Sache que cette formation a pour principal débouché de devenir <span>'.$a['debouche_1'].'</span>. Tu peux toujours aller consulter la page de cette université directement par le <span> lien </span> plus bas si tu souhaites obtenir des <span>informations</span> supplémentaires</p>
     </div>
 
      <div class="Matières"><h4><span> Les Matières enseignées <span></h4> 
@@ -85,8 +85,7 @@ width="30px" height="30px"> '.$a['nom_etablissement'].'</p>
     </div>
 
     <div class="Informations"><h4><span> Les Informations essentielles </span></h4>
-        <p class="texte">'.$a['diplome'].'</p>
-        <p class="site">lien vers le site de '.$a['nom_etablissement'].' : <div class="lien-bleu"> '.$a['lien_site'].' </div></a></p>
+        <p class="site">lien vers le site de '.$a['nom_etablissement'].' : <a href="'.$a['lien_site'].'" target=”_blank”>Ici</a></div></p>
      </div>
 
     

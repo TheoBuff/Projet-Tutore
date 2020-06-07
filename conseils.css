@@ -32,6 +32,16 @@ body {
     font-size: 1.5em;
 }
 
+img {
+    width: 14%;
+    height: 3%;
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-bottom: 1%;
+}
+
+/* Le style pour la barre de titre
+------------------------------------ */
 h1 {
     font-size: 4em;
     margin-bottom: -30px;
@@ -50,7 +60,8 @@ header {
     padding-top: 1%;
 
 }
-
+/* Liste de conseils 
+------------------------------------ */
 header > p {
     font-weight: 600;
     margin-left: 15%;
@@ -85,7 +96,7 @@ ol li {
 }
 
 li > p {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.15em;
     text-align: left;
 }
@@ -96,19 +107,13 @@ ol li::before {
     font-weight: bold;
     margin-right: 6%;
     margin-top: 0.6%;
-    background: -webkit-linear-gradient(rgb(228, 136, 136), rgb(219, 0, 0));
+    background: -webkit-linear-gradient(rgb(185, 135, 233), rgb(84, 0, 194));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-img {
-    width: 14%;
-    height: 3%;
-    margin-top: 2%;
-    margin-left: 0%;
-    margin-bottom: 1%;
-}
+
 .Conseil1 {
     margin-left: 0px;
 }
