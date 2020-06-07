@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<div id="myDIV">
+    <div id="myDIV">
         <nav class="menun">
             <a onclick="myFunction()" href="#" class="popupi"><img src="img/menu/retour.png" alt="Retourner"></a>
             <a class="logocontainer" href="index.html"> <img class="logo" src="img/LogoBW.png"></a>
@@ -23,32 +23,40 @@
         </nav>
         <div>
             <ul class="line-ul">
-                <li class="box-li"><a class="nodec" href="conseils.html"><img class="miniature" src="img/menu/lamp.svg" alt="">Conseils</a></li>
-                <li class="box-li"><a class="nodec" href="https://www.instagram.com/mission.dev/?hl=fr"><img class="miniature" src="img/menu/instagram.svg" alt="">Instagram</a></li>
-                <li class="box-li"><a class="nodec" href="apropos.php"><img class="miniature" src="img/menu/question-mark.svg" alt="">À Propos</a></li>
+                <li class="box-li"><a class="nodec" href="conseils.html"><img class="miniature" src="img/menu/lamp.svg"
+                            alt="">Conseils</a></li>
+                <li class="box-li"><a class="nodec" href="https://www.instagram.com/mission.dev/?hl=fr"
+                        target="_blank"><img class="miniature" src="img/menu/instagram.svg" alt="">Instagram</a></li>
+                <li class="box-li"><a class="nodec" href="apropos.php"><img class="miniature"
+                            src="img/menu/question-mark.svg" alt="">À Propos</a></li>
             </ul>
             <ul class="line-ul">
-                <li class="box-li"><a class="nodec" href="universites.php"><img class="miniature" src="img/menu/school.svg" alt="">Universités</a></li>
-                <li class="box-li"><a class="nodec" href="ecoles-spe.php"><img class="miniature" src="img/menu/data.svg" alt="">Écoles spécialisées</a></li>
-                <li class="box-li"><a class="nodec" href="ecoles-ing.php"><img class="miniature" src="img/menu/university.svg" alt="">École d'ingénieur</a></li>
+                <li class="box-li"><a class="nodec" href="universites.php"><img class="miniature"
+                            src="img/menu/school.svg" alt="">Universités</a></li>
+                <li class="box-li"><a class="nodec" href="ecoles-spe.php"><img class="miniature" src="img/menu/data.svg"
+                            alt="">Écoles spécialisées</a></li>
+                <li class="box-li"><a class="nodec" href="ecoles-ing.php"><img class="miniature"
+                            src="img/menu/university.svg" alt="">École d'ingénieur</a></li>
             </ul>
 
         </div>
     </div>
     <nav class="mainnav">
-        <a class="popupi" href="#myDIV" onclick="myFunction()" ><img src="img/popup.png" alt="Menu"></a>
+        <a class="popupi" href="#myDIV" onclick="myFunction()"><img src="img/popup.png" alt="Menu"></a>
         <a class="logocontainer" href="index.html"> <img class="logo" src="img/LogoBW.png"></a>
         <div class="popupi"><img src="" alt=""></div>
     </nav>
 
-    <header><h1>Universités</h1>
-    <p>Retrouvez ici les diplômes proposés par les universités</p></header>
+    <header>
+        <h1>Universités</h1>
+        <p>Retrouvez ici les diplômes proposés par les universités</p>
+    </header>
 
 
-        <form method="GET">
-    <fieldset>
-        <input type="search" name="q" placeholder="Rechercher…">
-        <?php
+    <form method="GET">
+        <fieldset>
+            <input type="search" name="q" placeholder="Rechercher…">
+            <?php
     $db = new PDO('mysql:host=localhost;dbname=projettut', 'root', '');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
@@ -70,9 +78,9 @@
 
     
     } ?>
-    <?php } else { ?>
+        <?php } else { ?>
         Aucun résultat pour: <?= $q ?> ...
-    <?php } ?>
+        <?php } ?>
     </div>
 
 
